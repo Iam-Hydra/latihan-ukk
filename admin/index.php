@@ -21,6 +21,7 @@ $data = ambildata($conn,$query);
     </ol>
   </div><!--/.row-->
   
+
   <div class="row">
     <div class="col-lg-12">
       <h1 class="page-header"><?= $title; ?></h1>
@@ -31,7 +32,7 @@ $data = ambildata($conn,$query);
     <div class="row">
       <div class="col-xs-6 col-md-4 col-lg-4 no-padding">
         <div class="panel panel-teal panel-widget border-right">
-          <div class="row no-padding"><i class="fa fa-xl fa-store color-blue"></i>
+          <div class="row no-padding"><i class="fa fa-xl fa-store color-orange"></i>
             <div class="large"><?= htmlspecialchars($outlet['jumlahoutlet']); ?></div>
             <div class="text-muted">Outlet</div>
           </div>
@@ -47,7 +48,7 @@ $data = ambildata($conn,$query);
       </div>
       <div class="col-xs-6 col-md-4 col-lg-4 no-padding">
         <div class="panel panel-orange panel-widget border-right">
-          <div class="row no-padding"><i class="fa fa-xl fa-shopping-cart color-teal"></i>
+          <div class="row no-padding"><i class="fa fa-xl fa-shopping-cart color-orange"></i>
             <div class="large"><?= htmlspecialchars($transaksi['jumlahtransaksi']); ?></div>
             <div class="text-muted">Transaksi</div>
           </div>
@@ -63,7 +64,7 @@ $data = ambildata($conn,$query);
           <h3 style="padding: 0 0 20px 0;">10 Transaksi Terbaru</h3>
           <div class="table-responsive">
             <table class="table table-bordered thead-dark" id="table">
-              <thead>
+              <thead class="thead-dark">
                 <tr>
                   <th>#</th>
                   <th>Invoice</th>

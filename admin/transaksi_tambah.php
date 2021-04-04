@@ -6,7 +6,7 @@ $tgl_sekarang = date('Y-m-d h:i:s');
 $tujuh_hari   = mktime(0,0,0,date("n"),date("j")+7,date("Y"));
 $batas_waktu  = date("Y-m-d h:i:s", $tujuh_hari);
 
-$invoice   = 'DRY'.Date('Ymdsi');
+$invoice   = 'PKT'.Date('Ymdsi');
 $user_id   = $_SESSION['user_id']; 
 $member_id = $_GET['id'];
 

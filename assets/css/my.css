@@ -1,8 +1,8 @@
 body {
-    background: #f1f4f7;
+    background: #d8dbdd;
     padding-top: 60px;
     font-size: 14px;
-    color: #444444;
+    color: #666;
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -13,7 +13,7 @@ p {
 a,
 a:hover,
 a:focus {
-    color: #30a5ff;
+    color: #ffb53e;
 }
 
 h1,
@@ -120,7 +120,7 @@ input.form-control {
 .navbar-header .navbar-brand {
     color: #fff;
     font-size: 20px;
-    text-transform: uppercase;
+    text-transform: none;
     font-weight: 500;
     height: 60px;
     padding-top: 18px;
@@ -312,6 +312,32 @@ fieldset[disabled] .btn-primary.active {
     border-color: #30a5ff;
 }
 
+.btn-orange,
+.btn-orange:hover,
+.btn-orange:focus,
+.btn-orange:active,
+.btn-orange.active,
+.open>.dropdown-toggle.btn-orange,
+.btn-orange.disabled,
+.btn-orange[disabled],
+fieldset[disabled] .btn-orange,
+.btn-orange.disabled:hover,
+.btn-orange[disabled]:hover,
+fieldset[disabled] .btn-orange:hover,
+.btn-orange.disabled:focus,
+.btn-orange[disabled]:focus,
+fieldset[disabled] .btn-orange:focus,
+.btn-orange.disabled:active,
+.btn-orange[disabled]:active,
+fieldset[disabled] .btn-orange:active,
+.btn-orange.disabled.active,
+.btn-orange[disabled].active,
+fieldset[disabled] .btn-orange.active {
+    background-color: #ecad25;
+    border-color: #ecad25;
+    color: #fff;
+}
+
 .btn-success,
 .btn-success:hover,
 .btn-success:focus,
@@ -333,8 +359,8 @@ fieldset[disabled] .btn-success:active,
 .btn-success.disabled.active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
-    background-color: #8ad919;
-    border-color: #8ad919;
+    background-color: #44f54d;
+    border-color: #44f54d;
 }
 
 .btn-warning,

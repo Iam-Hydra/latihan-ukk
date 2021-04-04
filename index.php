@@ -12,7 +12,6 @@
 	<link rel="stylesheet" type="text/css" href="assets/login/vendor/css-hamburgers/hamburgers.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/login/vendor/select2/select2.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/login/css/util.css">
-	<link rel="stylesheet" type="text/css" href="assets/login/css/main.css">
 	<link rel="stylesheet" type="text/css" href="assets/login/css/my.css">
 </head>
 <body>
@@ -22,8 +21,8 @@
 			<div class="wrap-login100 p-t-50 p-r-60 p-b-50 p-l-60">
 				<form class="login100-form validate-form" method="POST" action="login.php">
 					<span class="login100-form-title p-b-40">
-						E-Laundry<br/>
-						<p>Solusi Mager Nyuci</p>
+						Hy-Dry<br/>
+						<p>Bersih sempurna</p>
 					</span>
 
 					<?php if (isset($_GET['msg'])): ?>
