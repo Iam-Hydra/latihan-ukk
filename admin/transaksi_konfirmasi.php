@@ -29,10 +29,10 @@ $data = ambildata($conn,$query);
     <div class="row" style="padding: 0 15px 20px 15px;">
       <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
         <div class="col-md-6">
-          <a href="transaksi.php" class="btn btn-primary box-title"><i class="fa fa-arrow-left fa-fw"></i> Kembali</a>
+          <a href="transaksi.php" class="btn btn-orange box-title"><i class="fa fa-arrow-left fa-fw"></i> Kembali</a>
         </div>
         <div class="col-md-6 text-right">
-          <button id="btn-refresh" class="btn btn-primary box-title text-right" title="Refresh Data"><i class="fa fa-refresh" id="ic-refresh"></i></button>
+          <button id="btn-refresh" class="btn btn-orange box-title text-right" title="Refresh Data"><i class="fa fa-refresh" id="ic-refresh"></i></button>
         </div>
       </div>
     </div>
@@ -64,7 +64,7 @@ $data = ambildata($conn,$query);
                       <td><?= $transaksi['status'] ?></td>
                       <td><?= $transaksi['total_harga'] ?></td>
                       <td align="center">
-                            <a href="transaksi_bayar.php?id=<?= $transaksi['id_transaksi']; ?>" data-toggle="tooltip" data-placement="bottom" title="Pilih" class="btn btn-primary btn-block">Pilih</a>
+                            <a href="transaksi_bayar.php?id=<?= $transaksi['id_transaksi']; ?>" data-toggle="tooltip" data-placement="bottom" title="Pilih" class="btn btn-orange btn-block">Pilih</a>
                       </td>
                   </tr>
               <?php endforeach; ?>

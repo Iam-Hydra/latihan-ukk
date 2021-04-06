@@ -28,10 +28,10 @@ $data = ambildata($conn,$query);
     <div class="row" style="padding: 0 15px 20px 15px;">
       <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
         <div class="col-md-6">
-          <a href="pelanggan_tambah.php" class="btn btn-primary box-title"><i class="fa fa-plus fa-fw"></i> Tambah</a>
+          <a href="pelanggan_tambah.php" class="btn btn-orange box-title"><i class="fa fa-plus fa-fw"></i> Tambah</a>
         </div>
         <div class="col-md-6 text-right">
-          <button id="btn-refresh" class="btn btn-primary box-title text-right" title="Refresh Data"><i class="fa fa-refresh" id="ic-refresh"></i></button>
+          <button id="btn-refresh" class="btn btn-orange box-title text-right" title="Refresh Data"><i class="fa fa-refresh" id="ic-refresh"></i></button>
         </div>
       </div>
     </div>

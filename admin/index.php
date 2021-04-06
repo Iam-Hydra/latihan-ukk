@@ -31,16 +31,18 @@ $data = ambildata($conn,$query);
   <div class="panel panel-container">
     <div class="row">
       <div class="col-xs-6 col-md-4 col-lg-4 no-padding">
-        <div class="panel panel-teal panel-widget border-right">
-          <div class="row no-padding"><i class="fa fa-xl fa-store color-orange"></i>
+        <div class="panel panel-orange panel-widget border-right">
+          <div class="row no-padding">
+            <i class="fa fa-4x mb-3 fa-store color-orange"></i>
             <div class="large"><?= htmlspecialchars($outlet['jumlahoutlet']); ?></div>
             <div class="text-muted">Outlet</div>
           </div>
         </div>
       </div>
       <div class="col-xs-6 col-md-4 col-lg-4 no-padding">
-        <div class="panel panel-blue panel-widget border-right">
-          <div class="row no-padding"><i class="fa fa-xl fa-users color-orange"></i>
+        <div class="panel panel-orange panel-widget border-right">
+          <div class="row no-padding">
+            <i class="fa fa-4x mb-3 fa-users color-orange "></i>
             <div class="large"><?= htmlspecialchars($pelanggan['jumlahmember']); ?></div>
             <div class="text-muted">Pelanggan</div>
           </div>
@@ -48,7 +50,8 @@ $data = ambildata($conn,$query);
       </div>
       <div class="col-xs-6 col-md-4 col-lg-4 no-padding">
         <div class="panel panel-orange panel-widget border-right">
-          <div class="row no-padding"><i class="fa fa-xl fa-shopping-cart color-orange"></i>
+          <div class="row no-padding">
+            <i class="fa fa-4x mb-3 fa-shopping-cart color-orange"></i>
             <div class="large"><?= htmlspecialchars($transaksi['jumlahtransaksi']); ?></div>
             <div class="text-muted">Transaksi</div>
           </div>

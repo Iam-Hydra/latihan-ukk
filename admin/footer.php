@@ -1,5 +1,5 @@
 			<div class="col-sm-12">
-				<p class="back-link">2021 &copy; Made with <i class="fa fa-heart"></i> by Hydra13</p>
+				<p class="back-link">2021 &copy; UKK With <i class="fa fa-heart"></i> <a style="font-weight: bold ;" href="https://github.com/Iam-Hydra">by Hydra13</a> </p>
 			</div>
 		</div><!--/.row -->
 	</div><!--/.main-->

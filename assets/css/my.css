@@ -409,8 +409,8 @@ fieldset[disabled] .btn-danger:active,
 .btn-danger.disabled.active,
 .btn-danger[disabled].active,
 fieldset[disabled] .btn-danger.active {
-    background-color: #f9243f;
-    border-color: #f9243f;
+    background-color: #ff1433;
+    border-color: #ff1433;
 }
 
 .btn-link,

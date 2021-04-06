@@ -1,6 +1,6 @@
 <?php
 
-$title = "Transaksi";
+$title = "Transaksi Detail";
 require 'admin.php';
 $status = ['Baru','Proses','Selesai','Diambil'];
 $query = "SELECT transaksi.*, member.nama_member, detail_transaksi.*, outlet.nama_outlet,paket.nama_paket FROM transaksi INNER JOIN member ON member.id_member = transaksi.member_id INNER JOIN detail_transaksi ON detail_transaksi.transaksi_id = transaksi.id_transaksi INNER JOIN outlet ON outlet.id_outlet = transaksi.outlet_id INNER JOIN paket ON paket.outlet_id = transaksi.outlet_id  WHERE transaksi.id_transaksi=".$_GET['id'].";";
@@ -46,7 +46,7 @@ require 'header.php';
     <div class="row" style="padding: 0 15px 20px 15px;">
       <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
         <div class="col-md-6">
-          <a href="transaksi.php" class="btn btn-primary box-title"><i class="fa fa-arrow-left fa-fw"></i> Kembali</a>
+          <a href="transaksi.php" class="btn btn-orange box-title"><i class="fa fa-arrow-left fa-fw"></i> Kembali</a>
         </div>
       </div>
     </div>
@@ -113,7 +113,7 @@ require 'header.php';
               <small>Klik Tombol Ubah Untuk Menyimpan Perubahan Transaksi</small>
             </div>
             <div class="text-right">
-              <button type="submit" name="btn-simpan" class="btn btn-primary">Ubah</button>
+              <button type="submit" name="btn-simpan" class="btn btn-orange">Ubah</button>
             </div>
           </form>
         </div>

@@ -15,7 +15,7 @@ if(isset($_POST['btn-simpan'])){
     $title = 'Berhasil';
     $message = 'Berhasil Simpan Data';
     $type = 'success';
-    header('location: outlet.php?crud='.$success.'&msg='.$message.'&type='.$type.'&title='.$title);
+    header('location: outlet.php?crud=');
   }else{
     echo "Gagal Tambah Data";
   }
@@ -46,7 +46,7 @@ require'header.php';
     <div class="row" style="padding: 0 15px 20px 15px;">
       <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
         <div class="col-md-6">
-          <a href="outlet.php" class="btn btn-primary box-title"><i class="fa fa-arrow-left fa-fw"></i> Kembali</a>
+          <a href="outlet.php" class="btn btn-orange box-title"><i class="fa fa-arrow-left fa-fw"></i> Kembali</a>
         </div>
       </div>
     </div>

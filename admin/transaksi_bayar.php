@@ -4,6 +4,7 @@ $title = 'Transaksi';
 require'admin.php';
 $query = 'SELECT transaksi.*,member.nama_member , detail_transaksi.total_harga FROM transaksi INNER JOIN member ON member.id_member = transaksi.member_id INNER JOIN detail_transaksi ON detail_transaksi.transaksi_id = transaksi.id_transaksi WHERE transaksi.id_transaksi = ' . $_GET['id'];
 $data = ambilsatubaris($conn,$query);
+
 if(isset($_POST['btn-simpan'])) {
     $total_bayar = $_POST['total_bayar'];
     if($total_bayar >= $data['total_harga']){
@@ -49,7 +50,7 @@ require 'header.php';
     <div class="row" style="padding: 0 15px 20px 15px;">
       <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
         <div class="col-md-6">
-          <a href="transaksi_konfirmasi.php" class="btn btn-primary box-title"><i class="fa fa-arrow-left fa-fw"></i> Kembali</a>
+          <a href="transaksi_konfirmasi.php" class="btn btn-orange box-title"><i class="fa fa-arrow-left fa-fw"></i> Kembali</a>
         </div>  
       </div>
     </div>
@@ -80,7 +81,7 @@ require 'header.php';
               <?php endif ?>
             </div>
             <div class="text-right">
-              <button type="submit" name="btn-simpan" id="btn-simpan" class="btn btn-primary">Bayar</utton>
+              <button type="submit" name="btn-simpan" id="btn-simpan" class="btn btn-orange">Bayar</utton>
             </div>
           </form>
         </div>

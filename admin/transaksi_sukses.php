@@ -39,7 +39,7 @@ $data = ambilsatubaris($conn,$query);
               <h3>Pesanan Atas Nama <br/><b><?= $data['nama_member'] ?></b><br/> Behasil Di Simpan</h3>
               <strong>Kode Invoice <?= $data['kode_invoice'] ?></strong><br>
               <strong>Total Pembayaran Rp. <?= $data['total_harga'] ?></strong><br><br>
-              <a href="transaksi.php" class="btn btn-primary">Kembali Ke Menu Utama</a>
+              <a href="transaksi.php" class="btn btn-orange">Kembali Ke Menu Utama</a>
             </div>
           </div>
         </div>

@@ -29,11 +29,11 @@ $data = ambildata($conn,$query);
     <div class="row" style="padding: 0 15px 20px 15px;">
       <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
         <div class="col-md-6">
-          <a href="transaksi.php" class="btn btn-primary box-title"><i class="fa fa-arrow-left fa-fw"></i> Kembali</a>
+          <a href="transaksi.php" class="btn btn-orange box-title"><i class="fa fa-arrow-left fa-fw"></i> Kembali</a>
         </div>
         <div class="col-md-6 text-right">
           <small>Jika pelanggan belum terdaftar maka daftarkan dulu lewat menu pelanggan </small>
-          <button id="btn-refresh" class="btn btn-primary box-title text-right" title="Refresh Data"><i class="fa fa-refresh" id="ic-refresh"></i></button>
+          <button id="btn-refresh" class="btn btn-orange box-title text-right" title="Refresh Data"><i class="fa fa-refresh" id="ic-refresh"></i></button>
         </div>
       </div>
     </div>
@@ -67,7 +67,7 @@ $data = ambildata($conn,$query);
                   <td><?= $member['telp_member'] ?></td>
                   <td><?= $member['no_ktp'] ?></td>
                   <td align="center">
-                        <a href="transaksi_tambah.php?id=<?= $member['id_member']; ?>" data-toggle="tooltip" data-placement="bottom" title="Pilih" class="btn btn-primary btn-block">PILIH</a>
+                        <a href="transaksi_tambah.php?id=<?= $member['id_member']; ?>" data-toggle="tooltip" data-placement="bottom" title="Pilih" class="btn btn-orange btn-block">PILIH</a>
                   </td>
                 </tr>
                 <?php endforeach; ?>

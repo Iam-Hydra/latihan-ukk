@@ -23,6 +23,7 @@ function ambildata($conn, $query){
   }
 }
 
+//ngecek berhasil atau tidak
 function bisa($conn, $query){
   $db = mysqli_query($conn, $query);
   if($db){

@@ -38,7 +38,7 @@ if(isset($_POST['btn-simpan'])){
 
     $executeDetail = bisa($conn,$sqlDetail);
     if($executeDetail == 1){
-      header('location: transaksi_sukses.php?id='.$transaksi_id);
+      header('location: transaksi_sukses.php?id=');
     }else{
       echo "Gagal Tambah Data";
     }
@@ -72,10 +72,10 @@ require 'header.php';
     <div class="row" style="padding: 0 15px 20px 15px;">
       <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
         <div class="col-md-6">
-          <a href="transaksi_cari_member.php" class="btn btn-primary box-title"><i class="fa fa-arrow-left fa-fw"></i> Kembali</a>
+          <a href="transaksi_cari_member.php" class="btn btn-orange box-title"><i class="fa fa-arrow-left fa-fw"></i> Kembali</a>
         </div>
         <div class="col-md-6 text-right">
-          <button id="btn-refresh" class="btn btn-primary box-title text-right" title="Refresh Data"><i class="fa fa-refresh" id="ic-refresh"></i></button>
+          <button id="btn-refresh" class="btn btn-orange box-title text-right" title="Refresh Data"><i class="fa fa-refresh" id="ic-refresh"></i></button>
         </div>
       </div>
     </div>
