@@ -8,6 +8,10 @@ INNER JOIN transaksi ON transaksi.id_transaksi = detail_transaksi.transaksi_id
 INNER JOIN paket ON paket.id_paket = detail_transaksi.paket_id
 WHERE transaksi.status_bayar = 'Dibayar' GROUP BY detail_transaksi.paket_id");
 
+
+
+$query = "SELECT transaksi.*, member.nama_pelanggan, detail_transaksi.total_harga, outlet.nama_outlet FROM transaksi INNER JOIN member ON member.id_pelanggan = transaksi.id_pelanggan INNER JOIN detail_transaksi ON detail_transaksi.id_transaksi = transaksi.id_transaksi INNER JOIN outlet ON outlet.id_outlet = transaksi.outlet_id";
+$data = mysqli_query($conn, $query);
 ?>
 
 
@@ -30,7 +34,7 @@ WHERE transaksi.status_bayar = 'Dibayar' GROUP BY detail_transaksi.paket_id");
     <div class="row" style="padding: 0 15px 20px 15px;">
       <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
         <div class="col-md-6">
-          <a href="#" class="btn btn-orange box-title"><i class="fa fa-print fa-fw"></i>Cetak Laporan</a>
+          <a href="cetak.php" class="btn btn-orange box-title"><i class="fa fa-print fa-fw"></i>Cetak Laporan</a>
         </div>
       </div>
     </div>
@@ -73,4 +77,5 @@ WHERE transaksi.status_bayar = 'Dibayar' GROUP BY detail_transaksi.paket_id");
       </div>
     </div>
   </div>
+  
   <?php require 'footer.php'; ?>
